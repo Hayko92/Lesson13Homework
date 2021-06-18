@@ -12,7 +12,7 @@ public class Main {
         List<String> lines = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             String s = bf.readLine();
-            if(!s.matches("[A-Za-z0-9]\\.")) throw new MyOwnException("Wrong input");
+            if(!s.matches("[a-zA-Z0-9]+")) throw new MyOwnException("Wrong input");
             lines.add(s);
         }
          File file = new File("myFile.txt");
